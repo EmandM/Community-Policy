@@ -1,0 +1,10 @@
+apiVersion: extensions/v1beta1
+kind: PodSecurityPolicy
+metadata:
+  name: default-policy
+spec:
+  privileged: false
+  allowedCapabilities: []
+  hostNetwork: false
+  hostIPC: false
+  hostPID: false
