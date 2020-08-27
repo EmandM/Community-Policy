@@ -27,7 +27,7 @@ spec:
         violation[{"msg": msg}] {
           container := input_containers[_]
           has_disallowed_capabilities(container)
-          msg := sprintf("container <%v> has a disallowed capability. Allowed capabilities are %v", [container.name, get_default(input.parameters, "disallowedCapabilities", [])])
+          msg := sprintf("container <%v> has a disallowed capability. Disallowed capabilities are %v", [container.name, get_default(input.parameters, "disallowedCapabilities", [])])
         }
 
         has_disallowed_capabilities(container) {
