@@ -49,7 +49,7 @@
                 },
                 {
                     "field": "location",
-                    "In": "[parameters('targetRegions')]"
+                    "In": "[parameters('logAnalytics')]"
                 }
             ]
         },
@@ -69,7 +69,7 @@
                         },
                         {
                             "field": "Microsoft.Compute/virtualMachines/extensions/settings.workspaceId",
-                            "equals": "[parameters('targetRegions')]"
+                            "in": "[parameters('targetRegions')]"
                         }
                     ]
                 },
